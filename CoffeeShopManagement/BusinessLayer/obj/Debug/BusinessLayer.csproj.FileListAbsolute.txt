@@ -1,0 +1,6 @@
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\bin\Debug\BusinessLayer.dll
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\bin\Debug\BusinessLayer.pdb
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\BusinessLayer\obj\Debug\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\BusinessLayer\obj\Debug\BusinessLayer.pdb
