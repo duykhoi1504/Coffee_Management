@@ -1,0 +1,14 @@
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\bin\Debug\PresentationLayer.exe.config
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\bin\Debug\PresentationLayer.exe
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\bin\Debug\PresentationLayer.pdb
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\bin\Debug\BusinessLayer.dll
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\bin\Debug\TransferLayer.dll
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\bin\Debug\TransferLayer.pdb
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\PresentationLayer.csproj.AssemblyReference.cache
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\PresentationLayer.Properties.Resources.resources
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\PresentationLayer.csproj.GenerateResource.cache
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\PresentationLayer.csproj.CoreCompileInputs.cache
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\Presenta.9C561136.Up2Date
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\PresentationLayer.exe
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\PresentationLayer.pdb
