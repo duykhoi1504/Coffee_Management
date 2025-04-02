@@ -1,0 +1,6 @@
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\TransferLayer\bin\Debug\TransferLayer.dll
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\TransferLayer\bin\Debug\TransferLayer.pdb
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\TransferLayer\obj\Debug\TransferObject.csproj.AssemblyReference.cache
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\TransferLayer\obj\Debug\TransferObject.csproj.CoreCompileInputs.cache
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\TransferLayer\obj\Debug\TransferLayer.dll
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\TransferLayer\obj\Debug\TransferLayer.pdb
