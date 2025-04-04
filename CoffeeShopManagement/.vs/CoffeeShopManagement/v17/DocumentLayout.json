@@ -1,20 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\GitHub\\Coffee_Management\\CoffeeShopManagement\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{2B513618-0A2E-4D05-9C3B-903281864E01}|PresentationLayer\\PresentationLayer.csproj|d:\\github\\coffee_management\\coffeeshopmanagement\\presentationlayer\\frmadmindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2B513618-0A2E-4D05-9C3B-903281864E01}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\frmadmindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B513618-0A2E-4D05-9C3B-903281864E01}|PresentationLayer\\PresentationLayer.csproj|D:\\GitHub\\Coffee_Management\\CoffeeShopManagement\\presentationlayer\\frmadminadduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2B513618-0A2E-4D05-9C3B-903281864E01}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\frmadminadduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B513618-0A2E-4D05-9C3B-903281864E01}|PresentationLayer\\PresentationLayer.csproj|D:\\GitHub\\Coffee_Management\\CoffeeShopManagement\\presentationlayer\\frmadminadduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B513618-0A2E-4D05-9C3B-903281864E01}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\frmadminadduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\Users\\hoain\\Coffee_Management\\CoffeeShopManagement\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,44 +9,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FrmAdminAddUser.cs",
-              "DocumentMoniker": "D:\\GitHub\\Coffee_Management\\CoffeeShopManagement\\PresentationLayer\\FrmAdminAddUser.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\FrmAdminAddUser.cs",
-              "ToolTip": "D:\\GitHub\\Coffee_Management\\CoffeeShopManagement\\PresentationLayer\\FrmAdminAddUser.cs",
-              "RelativeToolTip": "PresentationLayer\\FrmAdminAddUser.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAMwBUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T07:37:36.396Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FrmAdminAddUser.cs [Design]",
-              "DocumentMoniker": "D:\\GitHub\\Coffee_Management\\CoffeeShopManagement\\PresentationLayer\\FrmAdminAddUser.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\FrmAdminAddUser.cs",
-              "ToolTip": "D:\\GitHub\\Coffee_Management\\CoffeeShopManagement\\PresentationLayer\\FrmAdminAddUser.cs [Design]",
-              "RelativeToolTip": "PresentationLayer\\FrmAdminAddUser.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T07:35:52.649Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FrmAdminDashboard.cs [Design]",
-              "DocumentMoniker": "D:\\GitHub\\Coffee_Management\\CoffeeShopManagement\\PresentationLayer\\FrmAdminDashboard.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\FrmAdminDashboard.cs",
-              "ToolTip": "D:\\GitHub\\Coffee_Management\\CoffeeShopManagement\\PresentationLayer\\FrmAdminDashboard.cs [Design]",
-              "RelativeToolTip": "PresentationLayer\\FrmAdminDashboard.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T07:24:57.362Z",
-              "EditorCaption": " [Design]"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
             }
           ]
         }
