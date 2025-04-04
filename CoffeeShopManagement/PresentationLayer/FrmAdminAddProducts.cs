@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace PresentationLayer
 {
-    public partial class FrmHome : Form
+    public partial class FrmAdminAddProducts : UserControl
     {
-        public FrmHome()
+        public FrmAdminAddProducts()
         {
             InitializeComponent();
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

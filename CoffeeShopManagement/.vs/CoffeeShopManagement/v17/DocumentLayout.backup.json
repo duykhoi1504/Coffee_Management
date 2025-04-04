@@ -7,12 +7,16 @@
       "RelativeMoniker": "D:0:0:{2B513618-0A2E-4D05-9C3B-903281864E01}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\frmadmindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B513618-0A2E-4D05-9C3B-903281864E01}|PresentationLayer\\PresentationLayer.csproj|d:\\github\\coffee_management\\coffeeshopmanagement\\presentationlayer\\frmadminadduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2B513618-0A2E-4D05-9C3B-903281864E01}|PresentationLayer\\PresentationLayer.csproj|D:\\GitHub\\Coffee_Management\\CoffeeShopManagement\\presentationlayer\\frmadminadduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2B513618-0A2E-4D05-9C3B-903281864E01}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\frmadminadduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B513618-0A2E-4D05-9C3B-903281864E01}|PresentationLayer\\PresentationLayer.csproj|d:\\github\\coffee_management\\coffeeshopmanagement\\presentationlayer\\frmadminadduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2B513618-0A2E-4D05-9C3B-903281864E01}|PresentationLayer\\PresentationLayer.csproj|D:\\GitHub\\Coffee_Management\\CoffeeShopManagement\\presentationlayer\\frmadminadduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2B513618-0A2E-4D05-9C3B-903281864E01}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\frmadminadduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B513618-0A2E-4D05-9C3B-903281864E01}|PresentationLayer\\PresentationLayer.csproj|d:\\github\\coffee_management\\coffeeshopmanagement\\presentationlayer\\frmadmindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B513618-0A2E-4D05-9C3B-903281864E01}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\frmadmindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmAdminDashboard.cs",
+              "DocumentMoniker": "D:\\GitHub\\Coffee_Management\\CoffeeShopManagement\\PresentationLayer\\FrmAdminDashboard.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\FrmAdminDashboard.cs",
+              "ToolTip": "D:\\GitHub\\Coffee_Management\\CoffeeShopManagement\\PresentationLayer\\FrmAdminDashboard.cs",
+              "RelativeToolTip": "PresentationLayer\\FrmAdminDashboard.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAMwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T04:19:32.573Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,

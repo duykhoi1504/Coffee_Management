@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAdminAddProducts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmAdminAddProducts.Designer.cs">
+      <DependentUpon>FrmAdminAddProducts.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAdminAddUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -58,11 +64,23 @@
     <Compile Include="FrmAdminDashboard.Designer.cs">
       <DependentUpon>FrmAdminDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmHome.cs">
+    <Compile Include="FrmCashierMainHome.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmHome.Designer.cs">
-      <DependentUpon>FrmHome.cs</DependentUpon>
+    <Compile Include="FrmCashierMainHome.Designer.cs">
+      <DependentUpon>FrmCashierMainHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCashierOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmCashierOrder.Designer.cs">
+      <DependentUpon>FrmCashierOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdminMainHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdminMainHome.Designer.cs">
+      <DependentUpon>FrmAdminMainHome.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
@@ -78,14 +96,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAdminAddProducts.resx">
+      <DependentUpon>FrmAdminAddProducts.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmAdminAddUser.resx">
       <DependentUpon>FrmAdminAddUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAdminDashboard.resx">
       <DependentUpon>FrmAdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmHome.resx">
-      <DependentUpon>FrmHome.cs</DependentUpon>
+    <EmbeddedResource Include="FrmCashierMainHome.resx">
+      <DependentUpon>FrmCashierMainHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCashierOrder.resx">
+      <DependentUpon>FrmCashierOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdminMainHome.resx">
+      <DependentUpon>FrmAdminMainHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
@@ -95,13 +122,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -125,8 +147,13 @@
       <Name>TransferObject</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Assets\" />
+    <Content Include="Assets\icons8-account-96.png" />
+    <Content Include="Assets\icons8-cash-96.png" />
+    <Content Include="Assets\icons8-money-bag-pounds-96.png" />
+    <Content Include="Assets\icons8-people-96.png" />
+    <Content Include="Assets\Logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

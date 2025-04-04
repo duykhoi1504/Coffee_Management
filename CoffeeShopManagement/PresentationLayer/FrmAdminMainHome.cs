@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace PresentationLayer
 {
-    public partial class FrmAdminDashboard : UserControl
+    public partial class FrmAdminMainHome : Form
     {
-        public FrmAdminDashboard()
+        public FrmAdminMainHome()
         {
             InitializeComponent();
-        }
-
-        private void panel6_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
