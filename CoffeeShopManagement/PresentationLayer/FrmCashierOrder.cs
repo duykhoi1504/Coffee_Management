@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace PresentationLayer
 {
-    public partial class FrmAdminDashboard : UserControl
+    public partial class FrmCashierOrder : UserControl
     {
-        public FrmAdminDashboard()
+        public FrmCashierOrder()
         {
             InitializeComponent();
         }
 
-        private void panel6_Paint(object sender, PaintEventArgs e)
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }
