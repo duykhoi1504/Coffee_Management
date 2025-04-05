@@ -2,9 +2,7 @@ C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\bin\Debu
 C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\bin\Debug\PresentationLayer.exe
 C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\bin\Debug\PresentationLayer.pdb
 C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\bin\Debug\BusinessLayer.dll
-C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\bin\Debug\TransferLayer.dll
 C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\bin\Debug\BusinessLayer.pdb
-C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\bin\Debug\TransferLayer.pdb
 C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\PresentationLayer.csproj.AssemblyReference.cache
 C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\PresentationLayer.Properties.Resources.resources
 C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\PresentationLayer.csproj.GenerateResource.cache
@@ -30,3 +28,13 @@ D:\GitHub\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\Pre
 D:\GitHub\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\Presenta.9C561136.Up2Date
 D:\GitHub\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\PresentationLayer.exe
 D:\GitHub\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\PresentationLayer.pdb
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\PresentationLayer.FrmAdminAddProducts.resources
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\PresentationLayer.FrmAdminAddUser.resources
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\PresentationLayer.FrmAdminDashboard.resources
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\PresentationLayer.FrmCashierMainHome.resources
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\PresentationLayer.FrmCashierOrder.resources
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\PresentationLayer.FrmAdminMainHome.resources
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\PresentationLayer.FrmLogin.resources
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\PresentationLayer.FrmRegister.resources
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\bin\Debug\TransferLayer.dll
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\bin\Debug\TransferLayer.pdb
