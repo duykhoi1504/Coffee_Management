@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TransferLayer;
 
 namespace PresentationLayer
 {
@@ -17,9 +18,12 @@ namespace PresentationLayer
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        public void displayAddUsersData()
         {
+            AdminAddUsers usersData = new AdminAddUsers();
+            List<AdminAddUsers> listData = usersData.usersListData();
 
+            dgvUsersTable.DataSource = listData;
         }
     }
 }

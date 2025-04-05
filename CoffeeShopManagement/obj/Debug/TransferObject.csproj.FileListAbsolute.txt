@@ -1,0 +1,2 @@
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\obj\Debug\TransferObject.csproj.AssemblyReference.cache
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\obj\Debug\TransferObject.csproj.CoreCompileInputs.cache
