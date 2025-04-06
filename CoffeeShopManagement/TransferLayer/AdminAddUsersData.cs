@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace TransferLayer
 {
-    public class AdminAddUsers
+    public class AdminAddUsersData
     {
         SqlConnection connect = null; //tam de null, co sql ket noi sau
 
@@ -17,11 +17,12 @@ namespace TransferLayer
         public string Password { set; get; }
         public string Role { set; get; }
         public string Status { set; get; }
+        public string Image { set; get; }
         public string DateRegistered { set; get; }
 
-        public List<AdminAddUsers> usersListData()
+        public List<AdminAddUsersData> usersListData()
         {
-            List<AdminAddUsers> listData = new List<AdminAddUsers>();
+            List<AdminAddUsersData> listData = new List<AdminAddUsersData>();
 
             if(connect.State != ConnectionState.Open)
             {
@@ -37,12 +38,13 @@ namespace TransferLayer
 
                         while (reader.Read()) 
                         {
-                            AdminAddUsers userData = new AdminAddUsers();
+                            AdminAddUsersData userData = new AdminAddUsersData();
                             userData.ID = (int)reader["id"];
                             userData.Username = reader["username"].ToString();
                             userData.Password = reader["password"].ToString();
                             userData.Role = reader["role"].ToString();
                             userData.Status = reader["status"].ToString();
+                            userData.Status = reader["profile_image"].ToString();
                             userData.DateRegistered = reader["date_reg"].ToString();
 
                             listData.Add(userData);

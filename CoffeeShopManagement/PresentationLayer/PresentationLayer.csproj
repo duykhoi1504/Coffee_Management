@@ -153,7 +153,9 @@
       <Name>TransferObject</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="User_Directory\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\icons8-account-96.png" />
     <Content Include="Assets\icons8-cash-96.png" />
