@@ -33,16 +33,18 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.logout_btn = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.addCustomer = new System.Windows.Forms.Button();
+            this.addProducts = new System.Windows.Forms.Button();
+            this.addCashier = new System.Windows.Forms.Button();
+            this.dashboard = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.frmAdminDashboard1 = new PresentationLayer.FrmAdminDashboard();
+            this.frmAdminAddProducts1 = new PresentationLayer.FrmAdminAddProducts();
+            this.frmAdminAddUser1 = new PresentationLayer.FrmAdminAddUser();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.close_btn = new System.Windows.Forms.Label();
-            this.frmAdminAddUser1 = new PresentationLayer.FrmAdminAddUser();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -55,10 +57,10 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.logout_btn);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.addCustomer);
+            this.panel1.Controls.Add(this.addProducts);
+            this.panel1.Controls.Add(this.addCashier);
+            this.panel1.Controls.Add(this.dashboard);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(-1, 37);
             this.panel1.Name = "panel1";
@@ -93,41 +95,44 @@
             this.logout_btn.UseVisualStyleBackColor = true;
             this.logout_btn.Click += new System.EventHandler(this.logout_btn_Click);
             // 
-            // button4
+            // addCustomer
             // 
-            this.button4.Location = new System.Drawing.Point(0, 514);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(248, 43);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Customers";
-            this.button4.UseVisualStyleBackColor = true;
+            this.addCustomer.Location = new System.Drawing.Point(0, 514);
+            this.addCustomer.Name = "addCustomer";
+            this.addCustomer.Size = new System.Drawing.Size(248, 43);
+            this.addCustomer.TabIndex = 3;
+            this.addCustomer.Text = "Customers";
+            this.addCustomer.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // addProducts
             // 
-            this.button3.Location = new System.Drawing.Point(0, 443);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(248, 43);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Add Products";
-            this.button3.UseVisualStyleBackColor = true;
+            this.addProducts.Location = new System.Drawing.Point(0, 443);
+            this.addProducts.Name = "addProducts";
+            this.addProducts.Size = new System.Drawing.Size(248, 43);
+            this.addProducts.TabIndex = 3;
+            this.addProducts.Text = "Add Products";
+            this.addProducts.UseVisualStyleBackColor = true;
+            this.addProducts.Click += new System.EventHandler(this.addProducts_Click);
             // 
-            // button2
+            // addCashier
             // 
-            this.button2.Location = new System.Drawing.Point(0, 372);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(248, 43);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Add Cashiers";
-            this.button2.UseVisualStyleBackColor = true;
+            this.addCashier.Location = new System.Drawing.Point(0, 372);
+            this.addCashier.Name = "addCashier";
+            this.addCashier.Size = new System.Drawing.Size(248, 43);
+            this.addCashier.TabIndex = 3;
+            this.addCashier.Text = "Add Cashiers";
+            this.addCashier.UseVisualStyleBackColor = true;
+            this.addCashier.Click += new System.EventHandler(this.addCashier_Click);
             // 
-            // button1
+            // dashboard
             // 
-            this.button1.Location = new System.Drawing.Point(3, 301);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(248, 43);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Home";
-            this.button1.UseVisualStyleBackColor = true;
+            this.dashboard.Location = new System.Drawing.Point(3, 301);
+            this.dashboard.Name = "dashboard";
+            this.dashboard.Size = new System.Drawing.Size(248, 43);
+            this.dashboard.TabIndex = 3;
+            this.dashboard.Text = "dashboard";
+            this.dashboard.UseVisualStyleBackColor = true;
+            this.dashboard.Click += new System.EventHandler(this.dashboard_Click);
             // 
             // pictureBox1
             // 
@@ -141,11 +146,35 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.frmAdminDashboard1);
+            this.panel2.Controls.Add(this.frmAdminAddProducts1);
             this.panel2.Controls.Add(this.frmAdminAddUser1);
             this.panel2.Location = new System.Drawing.Point(253, 44);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(979, 670);
+            this.panel2.Size = new System.Drawing.Size(1155, 670);
             this.panel2.TabIndex = 1;
+            // 
+            // frmAdminDashboard1
+            // 
+            this.frmAdminDashboard1.Location = new System.Drawing.Point(0, 3);
+            this.frmAdminDashboard1.Name = "frmAdminDashboard1";
+            this.frmAdminDashboard1.Size = new System.Drawing.Size(1191, 752);
+            this.frmAdminDashboard1.TabIndex = 3;
+            // 
+            // frmAdminAddProducts1
+            // 
+            this.frmAdminAddProducts1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.frmAdminAddProducts1.Location = new System.Drawing.Point(-16, -26);
+            this.frmAdminAddProducts1.Name = "frmAdminAddProducts1";
+            this.frmAdminAddProducts1.Size = new System.Drawing.Size(1202, 790);
+            this.frmAdminAddProducts1.TabIndex = 2;
+            // 
+            // frmAdminAddUser1
+            // 
+            this.frmAdminAddUser1.Location = new System.Drawing.Point(0, 3);
+            this.frmAdminAddUser1.Name = "frmAdminAddUser1";
+            this.frmAdminAddUser1.Size = new System.Drawing.Size(976, 664);
+            this.frmAdminAddUser1.TabIndex = 0;
             // 
             // panel3
             // 
@@ -153,7 +182,7 @@
             this.panel3.Controls.Add(this.close_btn);
             this.panel3.Location = new System.Drawing.Point(2, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1233, 43);
+            this.panel3.Size = new System.Drawing.Size(1406, 43);
             this.panel3.TabIndex = 2;
             // 
             // label4
@@ -170,26 +199,18 @@
             // 
             this.close_btn.AutoSize = true;
             this.close_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.close_btn.Location = new System.Drawing.Point(1188, 14);
+            this.close_btn.Location = new System.Drawing.Point(1365, 14);
             this.close_btn.Name = "close_btn";
             this.close_btn.Size = new System.Drawing.Size(16, 16);
             this.close_btn.TabIndex = 4;
             this.close_btn.Text = "X";
             this.close_btn.Click += new System.EventHandler(this.close_btn_Click);
             // 
-            // frmAdminAddUser1
-            // 
-            this.frmAdminAddUser1.Location = new System.Drawing.Point(0, 3);
-            this.frmAdminAddUser1.Name = "frmAdminAddUser1";
-            this.frmAdminAddUser1.Size = new System.Drawing.Size(976, 664);
-            this.frmAdminAddUser1.TabIndex = 0;
-            
-            // 
             // FrmAdminMainHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1231, 714);
+            this.ClientSize = new System.Drawing.Size(1411, 807);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -212,10 +233,10 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button logout_btn;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button addCustomer;
+        private System.Windows.Forms.Button addProducts;
+        private System.Windows.Forms.Button addCashier;
+        private System.Windows.Forms.Button dashboard;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
@@ -223,6 +244,8 @@
         private System.Windows.Forms.Label close_btn;
         private System.Windows.Forms.Label label4;
         private FrmAdminAddUser frmAdminAddUser1;
+        private FrmAdminAddProducts frmAdminAddProducts1;
+        private FrmAdminDashboard frmAdminDashboard1;
     }
 }
 

@@ -38,6 +38,25 @@ namespace PresentationLayer
             }
         }
 
-      
+        private void dashboard_Click(object sender, EventArgs e)
+        {
+            frmAdminDashboard1.Visible = true;
+            frmAdminAddUser1.Visible = false;
+            frmAdminAddProducts1.Visible = false;
+        }
+
+        private void addCashier_Click(object sender, EventArgs e)
+        {
+            frmAdminDashboard1.Visible = false;
+            frmAdminAddUser1.Visible = true;
+            frmAdminAddProducts1.Visible = false;
+        }
+
+        private void addProducts_Click(object sender, EventArgs e)
+        {
+            frmAdminDashboard1.Visible = false;
+            frmAdminAddUser1.Visible = false;
+            frmAdminAddProducts1.Visible = true;
+        }
     }
 }

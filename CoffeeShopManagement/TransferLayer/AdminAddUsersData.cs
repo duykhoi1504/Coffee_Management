@@ -10,7 +10,8 @@ namespace TransferLayer
 {
     public class AdminAddUsersData
     {
-        SqlConnection connect = null; //tam de null, co sql ket noi sau
+        SqlConnection connect = new SqlConnection(@"");
+
 
         public int ID { get; set; }
         public string Username { set; get; }

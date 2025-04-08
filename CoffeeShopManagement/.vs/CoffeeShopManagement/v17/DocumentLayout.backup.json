@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\GitHub\\Coffee_Management\\CoffeeShopManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2B513618-0A2E-4D05-9C3B-903281864E01}|PresentationLayer\\PresentationLayer.csproj|d:\\github\\coffee_management\\coffeeshopmanagement\\presentationlayer\\frmadminaddproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B513618-0A2E-4D05-9C3B-903281864E01}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\frmadminaddproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2B513618-0A2E-4D05-9C3B-903281864E01}|PresentationLayer\\PresentationLayer.csproj|d:\\github\\coffee_management\\coffeeshopmanagement\\presentationlayer\\frmadminmainhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B513618-0A2E-4D05-9C3B-903281864E01}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\frmadminmainhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B513618-0A2E-4D05-9C3B-903281864E01}|PresentationLayer\\PresentationLayer.csproj|d:\\github\\coffee_management\\coffeeshopmanagement\\presentationlayer\\frmadminadduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B513618-0A2E-4D05-9C3B-903281864E01}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\frmadminadduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{569C4A43-ADF0-4AD4-8470-7460C7483F22}|TransferLayer\\TransferObject.csproj|d:\\github\\coffee_management\\coffeeshopmanagement\\transferlayer\\adminaddproductsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{569C4A43-ADF0-4AD4-8470-7460C7483F22}|TransferLayer\\TransferObject.csproj|solutionrelative:transferlayer\\adminaddproductsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B513618-0A2E-4D05-9C3B-903281864E01}|PresentationLayer\\PresentationLayer.csproj|d:\\github\\coffee_management\\coffeeshopmanagement\\presentationlayer\\frmadminaddproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2B513618-0A2E-4D05-9C3B-903281864E01}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\frmadminaddproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{569C4A43-ADF0-4AD4-8470-7460C7483F22}|TransferLayer\\TransferObject.csproj|d:\\github\\coffee_management\\coffeeshopmanagement\\transferlayer\\adminaddusersdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{569C4A43-ADF0-4AD4-8470-7460C7483F22}|TransferLayer\\TransferObject.csproj|solutionrelative:transferlayer\\adminaddusersdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B513618-0A2E-4D05-9C3B-903281864E01}|PresentationLayer\\PresentationLayer.csproj|d:\\github\\coffee_management\\coffeeshopmanagement\\presentationlayer\\frmadminmainhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2B513618-0A2E-4D05-9C3B-903281864E01}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\frmadminmainhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,44 +26,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FrmAdminAddUser.cs",
-              "DocumentMoniker": "D:\\GitHub\\Coffee_Management\\CoffeeShopManagement\\PresentationLayer\\FrmAdminAddUser.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\FrmAdminAddUser.cs",
-              "ToolTip": "D:\\GitHub\\Coffee_Management\\CoffeeShopManagement\\PresentationLayer\\FrmAdminAddUser.cs",
-              "RelativeToolTip": "PresentationLayer\\FrmAdminAddUser.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAxwBAAAAAHAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "AdminAddUsersData.cs",
+              "DocumentMoniker": "D:\\GitHub\\Coffee_Management\\CoffeeShopManagement\\TransferLayer\\AdminAddUsersData.cs",
+              "RelativeDocumentMoniker": "TransferLayer\\AdminAddUsersData.cs",
+              "ToolTip": "D:\\GitHub\\Coffee_Management\\CoffeeShopManagement\\TransferLayer\\AdminAddUsersData.cs",
+              "RelativeToolTip": "TransferLayer\\AdminAddUsersData.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T07:30:19.987Z",
+              "WhenOpened": "2025-04-08T06:46:57.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminAddProductsData.cs",
+              "DocumentMoniker": "D:\\GitHub\\Coffee_Management\\CoffeeShopManagement\\TransferLayer\\AdminAddProductsData.cs",
+              "RelativeDocumentMoniker": "TransferLayer\\AdminAddProductsData.cs",
+              "ToolTip": "D:\\GitHub\\Coffee_Management\\CoffeeShopManagement\\TransferLayer\\AdminAddProductsData.cs",
+              "RelativeToolTip": "TransferLayer\\AdminAddProductsData.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAA0wBYAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T06:50:11.413Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FrmAdminAddProducts.cs",
-              "DocumentMoniker": "D:\\GitHub\\Coffee_Management\\CoffeeShopManagement\\PresentationLayer\\FrmAdminAddProducts.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\FrmAdminAddProducts.cs",
-              "ToolTip": "D:\\GitHub\\Coffee_Management\\CoffeeShopManagement\\PresentationLayer\\FrmAdminAddProducts.cs",
-              "RelativeToolTip": "PresentationLayer\\FrmAdminAddProducts.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAmwEMAAAAgAAAAAAAAAA==",
+              "Title": "FrmAdminMainHome.cs",
+              "DocumentMoniker": "D:\\GitHub\\Coffee_Management\\CoffeeShopManagement\\PresentationLayer\\FrmAdminMainHome.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\FrmAdminMainHome.cs",
+              "ToolTip": "D:\\GitHub\\Coffee_Management\\CoffeeShopManagement\\PresentationLayer\\FrmAdminMainHome.cs",
+              "RelativeToolTip": "PresentationLayer\\FrmAdminMainHome.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAuwDoAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T07:22:07.117Z",
+              "WhenOpened": "2025-04-08T06:43:19.275Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FrmAdminAddProducts.cs [Design]",
-              "DocumentMoniker": "D:\\GitHub\\Coffee_Management\\CoffeeShopManagement\\PresentationLayer\\FrmAdminAddProducts.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\FrmAdminAddProducts.cs",
-              "ToolTip": "D:\\GitHub\\Coffee_Management\\CoffeeShopManagement\\PresentationLayer\\FrmAdminAddProducts.cs [Design]",
-              "RelativeToolTip": "PresentationLayer\\FrmAdminAddProducts.cs [Design]",
+              "DocumentIndex": 3,
+              "Title": "FrmAdminMainHome.cs [Design]",
+              "DocumentMoniker": "D:\\GitHub\\Coffee_Management\\CoffeeShopManagement\\PresentationLayer\\FrmAdminMainHome.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\FrmAdminMainHome.cs",
+              "ToolTip": "D:\\GitHub\\Coffee_Management\\CoffeeShopManagement\\PresentationLayer\\FrmAdminMainHome.cs [Design]",
+              "RelativeToolTip": "PresentationLayer\\FrmAdminMainHome.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T07:19:00.565Z",
+              "WhenOpened": "2025-04-08T06:34:28.234Z",
               "EditorCaption": " [Design]"
             }
           ]

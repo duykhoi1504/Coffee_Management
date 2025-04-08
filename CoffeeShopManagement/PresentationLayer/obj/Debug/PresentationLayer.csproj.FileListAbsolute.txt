@@ -19,7 +19,6 @@ D:\GitHub\Coffee_Management\CoffeeShopManagement\PresentationLayer\bin\Debug\Bus
 D:\GitHub\Coffee_Management\CoffeeShopManagement\PresentationLayer\bin\Debug\TransferLayer.pdb
 D:\GitHub\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\PresentationLayer.csproj.AssemblyReference.cache
 D:\GitHub\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\PresentationLayer.FrmAdminDashboard.resources
-D:\GitHub\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\PresentationLayer.FrmHome.resources
 D:\GitHub\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\PresentationLayer.FrmLogin.resources
 D:\GitHub\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\PresentationLayer.FrmRegister.resources
 D:\GitHub\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\PresentationLayer.Properties.Resources.resources
@@ -38,3 +37,8 @@ C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debu
 C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\PresentationLayer.FrmRegister.resources
 C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\bin\Debug\TransferLayer.dll
 C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\bin\Debug\TransferLayer.pdb
+D:\GitHub\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\PresentationLayer.FrmAdminAddProducts.resources
+D:\GitHub\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\PresentationLayer.FrmAdminAddUser.resources
+D:\GitHub\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\PresentationLayer.FrmCashierMainHome.resources
+D:\GitHub\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\PresentationLayer.FrmCashierOrder.resources
+D:\GitHub\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\PresentationLayer.FrmAdminMainHome.resources

@@ -87,6 +87,7 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(1179, 325);
             this.dataGridView1.TabIndex = 4;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // panel2
             // 
@@ -153,6 +154,7 @@
             this.adminAddProducts_clearBtn.TabIndex = 14;
             this.adminAddProducts_clearBtn.Text = "CLEAR";
             this.adminAddProducts_clearBtn.UseVisualStyleBackColor = false;
+            this.adminAddProducts_clearBtn.Click += new System.EventHandler(this.adminAddProducts_clearBtn_Click);
             // 
             // adminAddProducts_deleteBtn
             // 
@@ -164,6 +166,7 @@
             this.adminAddProducts_deleteBtn.TabIndex = 15;
             this.adminAddProducts_deleteBtn.Text = "DELETE";
             this.adminAddProducts_deleteBtn.UseVisualStyleBackColor = false;
+            this.adminAddProducts_deleteBtn.Click += new System.EventHandler(this.adminAddProducts_deleteBtn_Click);
             // 
             // adminAddProducts_updateBtn
             // 
@@ -175,6 +178,7 @@
             this.adminAddProducts_updateBtn.TabIndex = 16;
             this.adminAddProducts_updateBtn.Text = "UPDATE";
             this.adminAddProducts_updateBtn.UseVisualStyleBackColor = false;
+            this.adminAddProducts_updateBtn.Click += new System.EventHandler(this.adminAddProducts_updateBtn_Click);
             // 
             // adminAddProducts_addBtn
             // 

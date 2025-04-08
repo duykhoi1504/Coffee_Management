@@ -5,3 +5,10 @@ C:\Users\hoain\Coffee_Management\CoffeeShopManagement\BusinessLayer\obj\Debug\Bu
 C:\Users\hoain\Coffee_Management\CoffeeShopManagement\BusinessLayer\obj\Debug\BusinessLayer.dll
 C:\Users\hoain\Coffee_Management\CoffeeShopManagement\BusinessLayer\obj\Debug\BusinessLayer.pdb
 C:\Users\hoain\Coffee_Management\CoffeeShopManagement\BusinessLayer\obj\Debug\Business.EA331CBA.Up2Date
+D:\GitHub\Coffee_Management\CoffeeShopManagement\bin\Debug\BusinessLayer.dll
+D:\GitHub\Coffee_Management\CoffeeShopManagement\bin\Debug\BusinessLayer.pdb
+D:\GitHub\Coffee_Management\CoffeeShopManagement\BusinessLayer\obj\Debug\BusinessLayer.csproj.AssemblyReference.cache
+D:\GitHub\Coffee_Management\CoffeeShopManagement\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+D:\GitHub\Coffee_Management\CoffeeShopManagement\BusinessLayer\obj\Debug\Business.EA331CBA.Up2Date
+D:\GitHub\Coffee_Management\CoffeeShopManagement\BusinessLayer\obj\Debug\BusinessLayer.dll
+D:\GitHub\Coffee_Management\CoffeeShopManagement\BusinessLayer\obj\Debug\BusinessLayer.pdb

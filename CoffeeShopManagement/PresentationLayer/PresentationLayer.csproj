@@ -154,6 +154,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Product_Directory\" />
     <Folder Include="User_Directory\" />
   </ItemGroup>
   <ItemGroup>
