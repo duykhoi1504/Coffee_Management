@@ -36,7 +36,7 @@ namespace TransferLayer
                         SqlDataReader reader = cmd.ExecuteReader();
                         while (reader.Read())
                         {
-                            AdminAddProductsData apd= new AdminAddProductsData();
+                            AdminAddProductsData apd = new AdminAddProductsData();
 
                             apd.ID = (int)reader["id"];
                             apd.ProductID = reader["prod_id"].ToString();
@@ -55,7 +55,8 @@ namespace TransferLayer
 
                         }
                     }
-                }catch(Exception ex)
+                }
+                catch (Exception ex)
                 {
                     Console.WriteLine("Connection Failed: " + ex);
                 }
@@ -66,6 +67,49 @@ namespace TransferLayer
             }
 
             return listData;
+        }
+
+        public List<AdminAddProductsData> aviliableProductsData()
+        {
+            List<AdminAddProductsData> listData = new List<AdminAddProductsData>();
+            if (connect.State == ConnectionState.Closed)
+            {
+                try
+                {
+                    connect.Open();
+                    string selectData = "SELECT * FROM Products WHERE status=@stats";
+
+                    using (SqlCommand cmd = new SqlCommand(selectData, connect))
+                    {
+                        cmd.Parameters.AddWithValue("@stats", "Available");
+                        SqlDataReader reader = cmd.ExecuteReader();
+                        while (reader.Read())
+                        {
+                            AdminAddProductsData apd = new AdminAddProductsData();
+
+                            apd.ID = (int)reader["id"];
+                            apd.ProductID = reader["prod_id"].ToString();
+                            apd.ProductName = reader["prod_name"].ToString();
+                            apd.type = reader["prod_type"].ToString();
+                            apd.Stock = reader["prod_stock"].ToString();
+                            apd.Price = reader["prod_price"].ToString();
+
+                            listData.Add(apd);
+                        }
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Connection Failed: " + ex);
+                }
+                finally
+                {
+                    connect.Close();
+                }
+            }
+            return listData;  
+
         }
     }
 }

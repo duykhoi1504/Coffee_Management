@@ -64,7 +64,7 @@ namespace PresentationLayer
                     {
                         connect.Open();
 
-                        string selectAccount = "SELECT * FROM Users WHERE username = @usern AND password = @pass AND status = @status";
+                        string selectAccount = "SELECT COUNT(*) FROM Users WHERE username = @usern AND password = @pass AND status = @status";
 
                         using (SqlCommand cmd = new SqlCommand(selectAccount, connect)) 
                         {
@@ -72,17 +72,36 @@ namespace PresentationLayer
                             cmd.Parameters.AddWithValue("@pass", login_password.Text.Trim());
                             cmd.Parameters.AddWithValue("@status", "Active");
 
-                            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                            DataTable table = new DataTable();
-                            adapter.Fill(table);
 
-                            if (table.Rows.Count > 0) 
+                            int rowCount= (int)cmd.ExecuteScalar();
+                            if (rowCount > 0)
                             {
-                                MessageBox.Show("Login successfully!", "Informaion Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                string selectRole = "SELECT role FROM Users WHERE username = @usern AND password = @pass";
+                                using(SqlCommand getRole= new SqlCommand(selectRole, connect))
+                                {
+                                    getRole.Parameters.AddWithValue("@usern", login_username.Text.Trim());
+                                    getRole.Parameters.AddWithValue("@pass", login_password.Text.Trim());
+                                    string userRole = getRole.ExecuteScalar() as string;
+                                    MessageBox.Show("Login successfully!", "Informaion Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    if (userRole == "Admin")
+                                    {
+
+                                        FrmAdminMainHome adminForm = new FrmAdminMainHome();
+                                        adminForm.Show();
+                                        this.Hide();
+                                    }
+                                    else if (userRole == "Cashier")
+                                    {
+                                        FrmCashierMainHome cashierForm = new FrmCashierMainHome();
+                                        cashierForm.Show();
+                                        this.Hide();
+                                    }
+                                }
                             }
                             else
                             {
                                 MessageBox.Show("Incorrect Username/Password or there's no Admin's approval.", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
                             }
                         }
                     }
