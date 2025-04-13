@@ -44,6 +44,7 @@
     <Compile Include="AdminAddProductsData.cs" />
     <Compile Include="AdminAddUsersData.cs" />
     <Compile Include="CashierOrderFormProdData.cs" />
+    <Compile Include="CashierOrdersData.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

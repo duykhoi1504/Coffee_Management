@@ -1,18 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\GitHub\\Coffee_Management\\CoffeeShopManagement\\",
+  "WorkspaceRootPath": "C:\\Users\\hoain\\Coffee_Management\\CoffeeShopManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2B513618-0A2E-4D05-9C3B-903281864E01}|PresentationLayer\\PresentationLayer.csproj|d:\\github\\coffee_management\\coffeeshopmanagement\\presentationlayer\\frmcashierorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2B513618-0A2E-4D05-9C3B-903281864E01}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\hoain\\coffee_management\\coffeeshopmanagement\\presentationlayer\\frmcashierorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B513618-0A2E-4D05-9C3B-903281864E01}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\frmcashierorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B513618-0A2E-4D05-9C3B-903281864E01}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\hoain\\coffee_management\\coffeeshopmanagement\\presentationlayer\\frmcashierorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2B513618-0A2E-4D05-9C3B-903281864E01}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\frmcashierorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B513618-0A2E-4D05-9C3B-903281864E01}|PresentationLayer\\PresentationLayer.csproj|d:\\github\\coffee_management\\coffeeshopmanagement\\presentationlayer\\frmcashiermainhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2B513618-0A2E-4D05-9C3B-903281864E01}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\frmcashiermainhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B513618-0A2E-4D05-9C3B-903281864E01}|PresentationLayer\\PresentationLayer.csproj|d:\\github\\coffee_management\\coffeeshopmanagement\\presentationlayer\\frmcashiermainhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B513618-0A2E-4D05-9C3B-903281864E01}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\frmcashiermainhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,44 +18,40 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FrmCashierOrder.cs [Design]",
-              "DocumentMoniker": "D:\\GitHub\\Coffee_Management\\CoffeeShopManagement\\PresentationLayer\\FrmCashierOrder.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\FrmCashierOrder.cs",
-              "ToolTip": "D:\\GitHub\\Coffee_Management\\CoffeeShopManagement\\PresentationLayer\\FrmCashierOrder.cs [Design]",
-              "RelativeToolTip": "PresentationLayer\\FrmCashierOrder.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T08:42:26.533Z",
-              "EditorCaption": " [Design]"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FrmCashierMainHome.cs",
-              "DocumentMoniker": "D:\\GitHub\\Coffee_Management\\CoffeeShopManagement\\PresentationLayer\\FrmCashierMainHome.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\FrmCashierMainHome.cs",
-              "ToolTip": "D:\\GitHub\\Coffee_Management\\CoffeeShopManagement\\PresentationLayer\\FrmCashierMainHome.cs",
-              "RelativeToolTip": "PresentationLayer\\FrmCashierMainHome.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAawB0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T08:18:30.234Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FrmCashierMainHome.cs [Design]",
-              "DocumentMoniker": "D:\\GitHub\\Coffee_Management\\CoffeeShopManagement\\PresentationLayer\\FrmCashierMainHome.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\FrmCashierMainHome.cs",
-              "ToolTip": "D:\\GitHub\\Coffee_Management\\CoffeeShopManagement\\PresentationLayer\\FrmCashierMainHome.cs [Design]",
-              "RelativeToolTip": "PresentationLayer\\FrmCashierMainHome.cs [Design]",
+              "Title": "FrmCashierOrder.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hoain\\Coffee_Management\\CoffeeShopManagement\\PresentationLayer\\FrmCashierOrder.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\FrmCashierOrder.cs",
+              "ToolTip": "C:\\Users\\hoain\\Coffee_Management\\CoffeeShopManagement\\PresentationLayer\\FrmCashierOrder.cs [Design]",
+              "RelativeToolTip": "PresentationLayer\\FrmCashierOrder.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T08:09:16.476Z",
+              "WhenOpened": "2025-04-13T14:19:35.476Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmCashierOrder.cs",
+              "DocumentMoniker": "C:\\Users\\hoain\\Coffee_Management\\CoffeeShopManagement\\PresentationLayer\\FrmCashierOrder.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\FrmCashierOrder.cs",
+              "ToolTip": "C:\\Users\\hoain\\Coffee_Management\\CoffeeShopManagement\\PresentationLayer\\FrmCashierOrder.cs",
+              "RelativeToolTip": "PresentationLayer\\FrmCashierOrder.cs",
+              "ViewState": "AgIAAKoBAAAAAAAAAAAAwNYBAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T13:09:30.896Z",
+              "EditorCaption": ""
             }
           ]
         }
