@@ -21,6 +21,16 @@ namespace PresentationLayer
             displayAddUsersData();
         }
 
+        public void RefreshData()
+        {
+            if (InvokeRequired)
+            {
+                Invoke((MethodInvoker)RefreshData);
+                return;
+            }
+            displayAddUsersData();
+        }
+
         public void displayAddUsersData()
         {
             AdminAddUsersData usersData = new AdminAddUsersData();
@@ -28,7 +38,6 @@ namespace PresentationLayer
 
             dgvUsersTable.DataSource = listData;
         }
-
 
         public bool EmptyField()
         {

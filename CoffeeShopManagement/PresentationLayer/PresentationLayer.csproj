@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -63,6 +64,12 @@
     </Compile>
     <Compile Include="FrmAdminDashboard.Designer.cs">
       <DependentUpon>FrmAdminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCustomers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmCustomers.Designer.cs">
+      <DependentUpon>FrmCustomers.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmCashierMainHome.cs">
       <SubType>Form</SubType>
@@ -104,6 +111,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAdminDashboard.resx">
       <DependentUpon>FrmAdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCustomers.resx">
+      <DependentUpon>FrmCustomers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCashierMainHome.resx">
       <DependentUpon>FrmCashierMainHome.cs</DependentUpon>
@@ -158,6 +168,7 @@
     <Folder Include="User_Directory\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\cafe_bg.jpeg" />
     <Content Include="Assets\icons8-account-96.png" />
     <Content Include="Assets\icons8-cash-96.png" />
     <Content Include="Assets\icons8-money-bag-pounds-96.png" />

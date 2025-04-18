@@ -10,14 +10,16 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TransferLayer;
 using System.Drawing.Printing;
+using System.Configuration;
+using TransferLayer;
 
 namespace PresentationLayer
 {
     public partial class FrmCashierOrder : UserControl
     {
-        SqlConnection connect = new SqlConnection(@"");
-
         public static int getCustID;
+
+        SqlConnection connect = new SqlConnection (@"");
 
         public FrmCashierOrder()
         {
@@ -26,6 +28,29 @@ namespace PresentationLayer
             DisplayAvailiableProds();
             DisplayAllOrders();
             DisplayTotalPrice();
+        }
+
+        public void RefreshData()
+        {
+            if (InvokeRequired)
+            {
+                Invoke((MethodInvoker)RefreshData);
+                return;
+            }
+
+            DisplayAvailableProds();
+            DisplayAllOrders();
+
+            DisplayTotalPrice();
+        }
+
+        public void DisplayAvailableProds()
+        {
+            CashierOrderFormProdData allProds = new CashierOrderFormProdData();
+
+            List<CashierOrderFormProdData> listData = allProds.aviliableProductsData();
+
+            cashierOrderForm_menuTable.DataSource = listData;
         }
 
         public void DisplayAvailiableProds()
@@ -46,13 +71,13 @@ namespace PresentationLayer
         private float totalPrice;
         public void DisplayTotalPrice()
         {
-            IDGenerator();
+            //IDGenerator();
 
             if (connect.State == ConnectionState.Closed)
             {
                 try
                 {
-                    connect.Open();
+                    //connect.Open();
 
                     string selectData = "SELECT SUM(prod_price) FROM orders WHERE customer_id = @custId";
 
@@ -169,7 +194,7 @@ namespace PresentationLayer
         {
             using (SqlConnection connect = new SqlConnection(@""))
             {
-                connect.Open();
+                //connect.Open();
 
                 //Lấy ID lớn nhẩt trong bảng Customers rồi tăng lên 1 đơn vị để tạo ID mới cho đơn hiện tại
                 string selectID = "SELECT MAX(customer_id) FROM customers";
@@ -292,7 +317,7 @@ namespace PresentationLayer
             }
         }
 
-        //Tính tiền thối
+        //Tính tiền thừa
         private void cashierOrderForm_amount_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
@@ -389,12 +414,13 @@ namespace PresentationLayer
             rowIndex = 0;
         }
 
+        //In hóa đơn thanh toán
         private void pdReceiptOfPayment_PrintPage(object sender, PrintPageEventArgs e)
         {
             DisplayTotalPrice();
 
-            float y = 0;
-            int count = 0;
+            float y = 0; //Vị trí hiện tại trên trục dọc
+            int count = 0; //Đếm dòng hiện tại
             int colWidth = 120;
             int headerMargin = 10;
             int tableMargin = 20;
@@ -410,6 +436,7 @@ namespace PresentationLayer
             alignCenter.Alignment = StringAlignment.Center;
             alignCenter.LineAlignment = StringAlignment.Center;
 
+            //In tên quán làm tiêu đề hóa đơn
             string headerText = "MarcoMan's Cafe Shop";
             y = (margin + count * headerFont.GetHeight(e.Graphics) + headerMargin);
             e.Graphics.DrawString(headerText, headerFont, Brushes.Black, e.MarginBounds.Left
@@ -418,6 +445,7 @@ namespace PresentationLayer
             count++;
             y += tableMargin;
 
+            //Tạo các tiêu đề các cột cho bảng sản phẩm
             string[] header = { "CID", "ProdID", "ProdName", "ProdType", "Qty", "Price" };
 
             for (int i = 0; i < header.Length; i++)
@@ -429,6 +457,7 @@ namespace PresentationLayer
 
             float rSpace = e.MarginBounds.Bottom - y;
 
+            //In thông tin sản phẩm đã mua trong hóa đơn
             while (rowIndex < cashierOrderForm_orderTable.Rows.Count)
             {
                 DataGridViewRow row = cashierOrderForm_orderTable.Rows[rowIndex];
@@ -444,6 +473,7 @@ namespace PresentationLayer
                 count++;
                 rowIndex++;
 
+                //Nếu sắp in quá lề dưới trang giấy thì dừng lại và đánh dấu còn trang tiếp theo
                 if (y + font.GetHeight(e.Graphics) > e.MarginBounds.Bottom)
                 {
                     e.HasMorePages = true;
@@ -457,18 +487,19 @@ namespace PresentationLayer
 
             float labelX = e.MarginBounds.Right - e.Graphics.MeasureString("------------------------------", labelFont).Width;
 
+            //In tổng tiền, số tiền khách trả, và tiền thối
             y = e.MarginBounds.Bottom - labelMargin - labelFont.GetHeight(e.Graphics);
             e.Graphics.DrawString("Total Price: \t$" + totalPrice + "\nAmount: \t$"
                 + cashierOrderForm_amount.Text + "\n\t\t------------\nChange: \t$" + cashierOrderForm_change.Text, labelFont, Brushes.Black, labelX, y);
 
             labelMargin = (int)Math.Min(rSpace, -40);
 
+            //In ngày/giờ hiện tại dưới cùng
             string labelText = today.ToString();
             y = e.MarginBounds.Bottom - labelMargin - labelFont.GetHeight(e.Graphics);
             e.Graphics.DrawString(labelText, labelFont, Brushes.Black, e.MarginBounds.Right - e.Graphics.MeasureString("------------------------------", labelFont).Width, y);
         }
 
-        private int getOrderID = 0;
         private void cashierOrderForm_removeBtn_Click(object sender, EventArgs e)
         {
             if (getOrderID == 0)
@@ -486,7 +517,7 @@ namespace PresentationLayer
                         {
                             connect.Open();
 
-                            string deleteData = "DELETE FROM orders WHERE id = @id";
+                            string deleteData = "DELETE FROM orders WHERE id = @id"; //Nên xóa sản phẩm trong đơn hàng đã thêm vào thay vì xóa đơn hàng
 
                             using (SqlCommand cmd = new SqlCommand(deleteData, connect))
                             {
@@ -511,6 +542,31 @@ namespace PresentationLayer
 
             DisplayAllOrders();
             DisplayTotalPrice();
+        }
+
+        private int getOrderID = 0;
+        //Lưu ID đơn hàng được chọn khi click vào bảng đơn hàng
+        private void cashierOrderForm_orderTable_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow row = cashierOrderForm_orderTable.Rows[e.RowIndex];
+            getOrderID = (int)row.Cells[0].Value;
+        }
+
+        public void clearFields()
+        {
+            cashierOrderForm_type.SelectedIndex = -1;
+            cashierOrderForm_productID.Items.Clear();
+            cashierOrderForm_prodName.Text = "";
+            cashierOrderForm_price.Text = "";
+            cashierOrderForm_quantity.Value = 0;
+        }
+
+        private void cashierOrderForm_clearBtn_Click_1(object sender, EventArgs e)
+        {
+            DisplayAllOrders();
+            DisplayTotalPrice();
+
+            clearFields();
         }
     }
 }

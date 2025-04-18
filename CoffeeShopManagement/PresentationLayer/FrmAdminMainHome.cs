@@ -43,6 +43,13 @@ namespace PresentationLayer
             frmAdminDashboard1.Visible = true;
             frmAdminAddUser1.Visible = false;
             frmAdminAddProducts1.Visible = false;
+
+            FrmCustomers ccForm = frmCustomers1 as FrmCustomers;
+
+            if (ccForm != null)
+            {
+                ccForm.RefreshData();
+            }
         }
 
         private void addCashier_Click(object sender, EventArgs e)
@@ -50,6 +57,13 @@ namespace PresentationLayer
             frmAdminDashboard1.Visible = false;
             frmAdminAddUser1.Visible = true;
             frmAdminAddProducts1.Visible = false;
+
+            FrmAdminAddUser aaUsers = frmAdminAddUser1 as FrmAdminAddUser;
+
+            if (aaUsers != null)
+            {
+                aaUsers.RefreshData();
+            }
         }
 
         private void addProducts_Click(object sender, EventArgs e)
@@ -57,6 +71,27 @@ namespace PresentationLayer
             frmAdminDashboard1.Visible = false;
             frmAdminAddUser1.Visible = false;
             frmAdminAddProducts1.Visible = true;
+
+            FrmAdminAddProducts aaProd = frmAdminAddProducts1 as FrmAdminAddProducts;
+
+            if (aaProd != null)
+            {
+                aaProd.RefreshData();
+            }
+        }
+
+        private void btnCustomers_Click(object sender, EventArgs e)
+        {
+            frmAdminDashboard1.Visible = false;
+            frmAdminAddProducts1.Visible = false;
+            frmCustomers1.Visible = true;
+
+            FrmCustomers ccForm = frmCustomers1 as FrmCustomers;
+
+            if (ccForm != null)
+            {
+                ccForm.RefreshData();
+            }
         }
     }
 }
