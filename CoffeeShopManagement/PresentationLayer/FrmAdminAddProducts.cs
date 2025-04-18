@@ -22,6 +22,16 @@ namespace PresentationLayer
             displayData();
         }
 
+        public void RefreshData()
+        {
+            if (InvokeRequired)
+            {
+                Invoke((MethodInvoker)RefreshData);
+                return;
+            }
+            displayData();
+        }
+
         public bool emptyFields()
         {
             if (adminAddProducts_id.Text == ""

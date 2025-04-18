@@ -42,3 +42,4 @@ D:\GitHub\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\Pre
 D:\GitHub\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\PresentationLayer.FrmCashierMainHome.resources
 D:\GitHub\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\PresentationLayer.FrmCashierOrder.resources
 D:\GitHub\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\PresentationLayer.FrmAdminMainHome.resources
+C:\Users\hoain\Coffee_Management\CoffeeShopManagement\PresentationLayer\obj\Debug\PresentationLayer.FrmCustomers.resources

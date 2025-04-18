@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BusinessLayer;
+using TransferLayer;
 
 namespace PresentationLayer
 {
@@ -35,6 +37,66 @@ namespace PresentationLayer
                 FrmLogin login = new FrmLogin();
                 login.Show();
                 this.Hide();
+            }
+        }
+
+        private void addProducts_btn_Click(object sender, EventArgs e)
+        {
+            frmAdminDashboard1.Visible = false;
+            frmAdminAddProducts1.Visible = true;
+            frmCashierOrder1.Visible = false;
+            frmCustomers1.Visible = false;
+
+            FrmAdminAddProducts aaProd = frmAdminAddProducts1 as FrmAdminAddProducts;
+
+            if (aaProd != null)
+            {
+                aaProd.RefreshData();
+            }
+        }
+
+        private void order_btn_Click(object sender, EventArgs e)
+        {
+            frmAdminDashboard1.Visible = false;
+            frmAdminAddProducts1.Visible = false;
+            frmCashierOrder1.Visible = true;
+            frmCustomers1.Visible = false;
+
+            FrmCashierOrder coForm = frmCashierOrder1 as FrmCashierOrder;
+
+            if (coForm != null)
+            {
+                coForm.RefreshData();
+            }
+        }
+
+        private void customer_btn_Click(object sender, EventArgs e)
+        {
+            frmAdminDashboard1.Visible = false;
+            frmAdminAddProducts1.Visible = false;
+            frmCashierOrder1.Visible = false;
+            frmCustomers1.Visible = true;
+
+            FrmCustomers ccForm = frmCustomers1 as FrmCustomers;
+
+            if (ccForm != null)
+            {
+                ccForm.RefreshData();
+            }
+        }
+
+        private void dashboard_btn_Click(object sender, EventArgs e)
+        {
+            frmAdminDashboard1.Visible = false;
+            frmAdminAddProducts1.Visible = false;
+            frmCashierOrder1.Visible = false;
+            frmCustomers1.Visible = true;
+
+            FrmCustomers ccForm = frmCustomers1 as FrmCustomers;
+
+            if (ccForm != null)
+            {
+                ccForm.RefreshData();
             }
         }
     }
