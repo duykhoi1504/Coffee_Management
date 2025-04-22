@@ -35,12 +35,12 @@ namespace PresentationLayer
 
         private void login_showPass_CheckedChanged(object sender, EventArgs e)
         {
-            login_password.PasswordChar = login_showPass.Checked ? '\0' : '*';
+            txtPassword.PasswordChar = login_showPass.Checked ? '\0' : '*';
         }
 
         public bool emptyFields()
         {
-            if (login_username.Text == "" || login_password.Text == "")
+            if (txtUsername.Text == "" || txtPassword.Text == "")
             {
                 return true;
             }
@@ -68,8 +68,8 @@ namespace PresentationLayer
 
                         using (SqlCommand cmd = new SqlCommand(selectAccount, connect)) 
                         {
-                            cmd.Parameters.AddWithValue("@usern", login_username.Text.Trim());
-                            cmd.Parameters.AddWithValue("@pass", login_password.Text.Trim());
+                            cmd.Parameters.AddWithValue("@usern", txtUsername.Text.Trim());
+                            cmd.Parameters.AddWithValue("@pass", txtPassword.Text.Trim());
                             cmd.Parameters.AddWithValue("@status", "Active");
 
 
@@ -79,8 +79,8 @@ namespace PresentationLayer
                                 string selectRole = "SELECT role FROM Users WHERE username = @usern AND password = @pass";
                                 using(SqlCommand getRole= new SqlCommand(selectRole, connect))
                                 {
-                                    getRole.Parameters.AddWithValue("@usern", login_username.Text.Trim());
-                                    getRole.Parameters.AddWithValue("@pass", login_password.Text.Trim());
+                                    getRole.Parameters.AddWithValue("@usern", txtUsername.Text.Trim());
+                                    getRole.Parameters.AddWithValue("@pass", txtPassword.Text.Trim());
                                     string userRole = getRole.ExecuteScalar() as string;
                                     MessageBox.Show("Login successfully!", "Informaion Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                     if (userRole == "Admin")

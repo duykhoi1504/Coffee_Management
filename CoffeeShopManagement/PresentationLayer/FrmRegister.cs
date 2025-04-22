@@ -27,12 +27,12 @@ namespace PresentationLayer
 
         private void register_showPass_CheckedChanged(object sender, EventArgs e)
         {
-            register_password.PasswordChar=register_showPass.Checked ? '\0' : '*';
-            register_confirmPass.PasswordChar=register_showPass.Checked ? '\0' : '*';
+            txtPassword.PasswordChar=register_showPass.Checked ? '\0' : '*';
+            txtConfirmPass.PasswordChar=register_showPass.Checked ? '\0' : '*';
         }
         public bool emptyFields()
         {
-            if(register_username.Text == "" || register_password.Text == "" || register_confirmPass.Text == "" )
+            if(txtUsername.Text == "" || txtPassword.Text == "" || txtConfirmPass.Text == "" )
             {
                 return true;
             }
@@ -59,20 +59,20 @@ namespace PresentationLayer
                         string selectUserName = "SELECT * FROM Users WHERE username = @usern";
                         using (SqlCommand checkUsername = new SqlCommand(selectUserName, connect))
                         {
-                            checkUsername.Parameters.AddWithValue("@usern", register_username.Text.Trim());
+                            checkUsername.Parameters.AddWithValue("@usern", txtUsername.Text.Trim());
                             SqlDataAdapter adapter = new SqlDataAdapter(checkUsername);
                             DataTable table = new DataTable();
                             adapter.Fill(table);
                             if (table.Rows.Count >= 1)
                             {
-                                string usern=register_username.Text.Substring(0,1).ToUpper() + register_username.Text.Substring(1);
+                                string usern= txtUsername.Text.Substring(0,1).ToUpper() + txtUsername.Text.Substring(1);
                                 MessageBox.Show(usern + " - is alreay taken", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
-                            else if(register_password.Text!= register_confirmPass.Text)
+                            else if(txtPassword.Text!= txtConfirmPass.Text)
                             {
                                 MessageBox.Show("Password doesn't match", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
-                            else if (register_password.Text.Length<8)
+                            else if (txtPassword.Text.Length<8)
                             {
                                 MessageBox.Show("invalid password, at least 8 characters are needed", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
@@ -83,8 +83,8 @@ namespace PresentationLayer
                                 DateTime today=DateTime.Today;
                                 using (SqlCommand cmd= new SqlCommand(insertData, connect))
                                 {
-                                    cmd.Parameters.AddWithValue("@usern", register_username.Text.Trim());
-                                    cmd.Parameters.AddWithValue("@pass", register_password.Text.Trim());
+                                    cmd.Parameters.AddWithValue("@usern", txtUsername.Text.Trim());
+                                    cmd.Parameters.AddWithValue("@pass", txtPassword.Text.Trim());
                                     cmd.Parameters.AddWithValue("@image","");
                                     cmd.Parameters.AddWithValue("@role", "Cashier");
                                     cmd.Parameters.AddWithValue("@status", "Approval");

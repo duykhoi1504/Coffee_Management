@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,9 @@ namespace PresentationLayer
 {
     public partial class FrmAdminMainHome : Form
     {
+        private SqlConnection cn;
+        //DataProvider dataProvider = new DataProvider();
+
         public FrmAdminMainHome()
         {
             InitializeComponent();
